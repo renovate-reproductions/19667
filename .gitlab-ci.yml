@@ -1,3 +1,9 @@
 include:
     - project: 'renovate-bot/renovate-runner'
       file: '/templates/renovate-dind.gitlab-ci.yml'
+
+variables:
+  RENOVATE_TOKEN: ${CI_JOB_TOKEN}
+renovate:
+  rules:
+    - when: always
