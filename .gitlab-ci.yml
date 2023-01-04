@@ -3,7 +3,7 @@ include:
       file: '/templates/renovate-dind.gitlab-ci.yml'
 
 variables:
-  RENOVATE_TOKEN: ${CI_JOB_TOKEN}
+  RENOVATE_EXTRA_FLAGS: --autodiscover=true --onboarding=true --autodiscover-filter=thielepaul/renovate-gonum
 renovate:
   rules:
     - when: always
