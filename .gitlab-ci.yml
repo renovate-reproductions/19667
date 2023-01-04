@@ -5,7 +5,6 @@ include:
 variables:
   RENOVATE_EXTRA_FLAGS: --autodiscover=true --onboarding=true --autodiscover-filter=thielepaul/renovate-gonum
   RENOVATE_LOG_FILE_LEVEL: "debug"
-  GOPROXY: "https://proxy.golang.org"
 renovate:
   rules:
     - when: always
